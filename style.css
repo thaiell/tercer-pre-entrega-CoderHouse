@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+/* HEADER */
+
+header {
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-image: url(img/TuManufactureo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color:rgb(220, 161, 85);
+    margin-bottom: 50px;
+}
+
+/* HEADER LEFT */
+.headerLeft {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+}
+.headerLeft button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 6.5px;
+    background-color: transparent;
+    border: 0;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+.plusIcon {
+    width: 25px;
+    height: 25px;
+}
+.headerLeft button:hover {
+    background-color: #F4ECF7;
+    transition: all .1s ease;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease; 
+    -o-transition: all .1s ease;
+}
+
+.headerLeft .filterForm {
+    display: flex;
+    flex-direction: column;
+}
+.headerLeft .filterForm input {
+    margin: 6.5px;
+}
+
+/* SEARCHER */
+
+.searcher {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 23px;
+}
+.searcherInput {
+    height: 30px;
+    width: 260px;
+    padding: 0;
+}
+.searcherButton {
+    margin-left: 10px;
+
+    background-color: aliceblue;
+    height: 30px;
+    width: 35px;
+    padding: 0;
+}
+
+/* HEADER RIGHT */
+.headerRight {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.headerRight button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+.headerRight button:hover {
+        background-color: #F4ECF7;
+        transition: all .1s ease;
+        -webkit-transition: all .1s ease;
+        -moz-transition: all .1s ease;
+        -ms-transition: all .1s ease;
+        -o-transition: all .1s ease;
+}
+
+.headerRightBtn {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+} 
+.headerRight .icon {
+    margin: 0 20px;
+}
+
+/* FORM */
+.myform {
+    display: flex;
+    flex-direction: column;
+}
+
+.myform label {
+    display: inline-block;
+    width: 200px; 
+}
+
+.myform input {
+    width: 300px;
+}
+
+/* SECTION CARDS */
+.container-section-cards {
+    text-align: center;
+}
+.section-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    grid-template-rows: 500px;
+    gap: 20px;
+    place-items: center;
+}
+
+.mycard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    height: 500px;
+    max-height: 500px;
+    margin: 0 10px;
+    padding-bottom: 10px;
+    background-color:#F4ECF7;
+    padding: 5px;
+    position: relative;
+}
+ .mycard img {
+    max-width: 100%;
+    min-height: 380px;
+    height: 380px;
+    object-fit: cover;
+} 
+
+.productNameCard {
+    margin-bottom: 0;
+    max-height: 110px;
+    font-size: clamp(16px, 2.5vw, 28px);
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.handmakerName {
+    font-style: italic;
+    color: #999;
+    margin-top: 0;
+}
+.cardContent{
+    display:flex;
+    flex-direction: column;
+
+}
+.wordCard {
+    text-align: left;
+}
+
+.buttonToRight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttonToRight b { 
+     font-size: 30px;
+    font-weight: 300;
+    max-width: 100px;
+    max-height: 90px;
+    overflow:hidden;
+}
+.buttonShopCart {
+    background-color: lightgrey;
+    border: 0.1px grey solid;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+    width: 175px;
+    height: 30px;
+}
+/* SHOP CART */
+
+.Cardh1 {
+    text-align: center;
+}
+
+
+/* ELIMATE OPERACION */
+
+.eliminateButtonInCard {
+    background-color: transparent;
+    position: absolute;
+    border: 0;
+    right: 15px;
+    top: 10px;
+    font-size: 25px;
+    color:darkred;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+} 
+.eliminateButtonInCard:hover {
+    background-color: antiquewhite;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* .eliminateButtonInCard:active { ponerlo desde js
+    transition: all 1s ease-out;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+} */
+
+
+
+/* BOTON TEMPORAL  */
+
+
+.botonTemporal {
+    position: absolute;
+    top: 10px;
+    margin: auto;
+}
