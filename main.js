@@ -106,6 +106,7 @@ downToUp.addEventListener("click", () => {
     cards(downToUpStorage);
 });
 
+
 // BUSCADOR DE OBJETOS // BARRA DE BUSQUEDA
 let query = document.getElementById("searchInput").value;
 let searchInput = document.getElementById("searchInput");
@@ -155,11 +156,11 @@ cardH1.append(h1);
 cards(shopCartStorage);
 });
 
-// ELIMINAR PRODUCTOS DEL STOCK STORAGE
+/* // ELIMINAR PRODUCTOS DEL STOCK STORAGE
 const eliminateButton = document.getElementById("eliminateButton"); 
 
 eliminateButton.addEventListener("click", () => {
-})
+}) */
 
 const addCardsDefault = document.getElementById("addCards");
 
@@ -167,6 +168,13 @@ addCardsDefault.addEventListener("click", () => {
 alert("Utilizar solo una vez, ya que saldran todos los productos repetidos, esto es solo para que aparezcan productos por defaul en sus navegadores tambien")
     cargarStockTrampa();
     location.reload();
+})
+
+let goBack = document.getElementById("goBack");
+
+goBack.addEventListener("click", () => {
+    cardSection.innerHTML = "";
+    cards(stockStorage);
 })
 
 
